@@ -1,0 +1,81 @@
+/* contenedor carrousel */
+#carousel {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+border: 1px solid #00000000;
+
+}
+/* contenido carrrousel */
+#car-container {
+  background-color:#E12454 ;
+  scroll-snap-type: x mandatory;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 10px;
+  color: #000;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  border: 3px rgba(0, 0, 0, 0) solid;
+}
+.carru {
+  padding: 20px;
+  scroll-snap-align: center;
+  position: relative;
+ /* min-width: 40%;*/
+  text-align: center;
+  border: 1px solid #00000000;
+  border-radius: 5px;
+ /* box-shadow: 5px 4px 6px rgb(212, 212, 212);*/
+}
+/* contenedor botones */
+.NavCarrusel {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  top: -180px;
+ 
+
+}
+/* contenedor indicadores */
+.slide-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.slide-indicator {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 5px;
+  width: 50px;
+}
+.slide-indicator:after {
+  content: "";
+  border: 1px black solid;
+  height: 10px;
+  width: 50px;
+}
+.slide-indicator.active:after,
+.slide-indicator:hover:after {
+  background-color: #ccc;
+}
+/* flechas */
+.arrow {
+  border: 1px rgba(0, 0, 0, 0) solid;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+
